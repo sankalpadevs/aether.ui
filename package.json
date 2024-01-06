@@ -6,6 +6,10 @@
   "main": "dist/index.cjs",
   "typings": "dist/index.d.ts",
   "module": "dist/aether.ui.esm.js",
+  "files": [
+    "README.md",
+    "dist"
+  ],
   "exports": {
     "types": {
       "import": "./dist/index.d.ts",
