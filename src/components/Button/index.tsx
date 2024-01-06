@@ -1,3 +1,9 @@
 import React from "react";
 
-export const Button = React.createElement("button", null, "Click me!");
+export const Button = () => {
+    return(
+        <button onClick={() => {
+            console.log('clicked!')
+        }}>Click me!</button>
+    )
+};
