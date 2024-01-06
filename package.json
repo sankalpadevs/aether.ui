@@ -1,7 +1,24 @@
 {
   "name": "aether.ui",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
+  "license": "ISC",
+  "main": "dist/index.cjs",
+  "typings": "dist/index.d.ts",
+  "module": "dist/aether.ui.esm.js",
+  "exports": {
+    "types": {
+      "import": "./dist/index.d.ts",
+      "require": "./dist/index.d.cts"
+    },
+    "import": "./dist/aether.ui.esm.js",
+    "require": "./dist/index.cjs"
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sankalpadevs/aether.ui.git"
+  },
   "devDependencies": {
     "@types/node": "^16.18.69",
     "@types/react": "^18.2.46",
