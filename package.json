@@ -1,7 +1,11 @@
 {
-  "name": "aether.ui",
+  "name": "@sankalpadevs/aether.ui",
   "version": "0.0.0",
-  "private": false,
+  "private": true,
+  "author": {
+    "email": "sankalpa.devs@gmail.com",
+    "name": "Sankalpa Devs"
+  },
   "license": "ISC",
   "main": "dist/index.cjs",
   "typings": "dist/index.d.ts",
