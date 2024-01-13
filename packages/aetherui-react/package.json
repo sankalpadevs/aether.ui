@@ -1,0 +1,46 @@
+{
+  "name": "aetherui-react",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "main": "dist/index.cjs",
+  "typings": "dist/index.d.ts",
+  "module": "dist/aether.ui.esm.js",
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    "types": {
+      "import": "./dist/index.d.ts",
+      "require": "./dist/index.d.cts"
+    },
+    "import": "./dist/aether.ui.esm.js",
+    "require": "./dist/index.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sankalpadevs/aether.ui.git",
+    "directory": "packages/aetherui-react"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "build": "../../scripts/build.sh --external:react --external:react-dom",
+    "build-clean": "../../scripts/build.sh --clean-build --external:react --external:react-dom",
+    "lint": "../../scripts/lint.sh"
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.69",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
