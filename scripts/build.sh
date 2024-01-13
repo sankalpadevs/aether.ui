@@ -3,22 +3,31 @@ set -e
 
 SCRIPT_DIR=$(cd ${0%/*} && pwd -P)
 
+#ANSI Color codes
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
 
 # Known variables
 SRC='./src'
+PWD=$(pwd)
 DST='./dist'
 name="aether.ui"
 input="${SRC}/index.ts"
 esbuild_flags=()
 clean_build=false
+link_package=false
 
 #Exclude --clean-build flag from esbuild flags
 for arg in "$@"; do
-  if [ "$arg" != "--clean-build" ]; then
+  echo -e "${GREEN} ${arg} ${NC}"
+  if [ "$arg" == "--clean-build" ]; then
     # Include other flags
-    esbuild_flags+=("$arg")
-  else
     clean_build=true
+  elif [ "$arg" == "link" ]; then
+    # Copy package.json for linking purposes
+    link_package=true
+  else
+    esbuild_flags+=("$arg")
   fi
 done
 
@@ -62,6 +71,12 @@ cp $DST/index.d.ts $DST/index.d.cts
 
 # Copy pre-build files over
 cp -rf ./pre-build/* $DST/
+
+# Copy package.json to $DST for linking
+if [ "$link_package" == true ]; then
+  echo -e "${GREEN}Copying package.json as link is defined!${NC}"
+  cp $PWD/package.json $DST/package.json
+fi
 
 # Wait for all the scripts to finish
 wait
