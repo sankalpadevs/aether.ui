@@ -22,7 +22,7 @@
   },
   "scripts": {
     "aetherui-react": "npm run --workspace=aetherui-react",
-    "build": "aetherui-react build-clean",
+    "build": "npm run aetherui-react build-clean",
     "lint": "./scripts/lint.sh"
   },
   "husky": {
@@ -31,6 +31,6 @@
     }
   },
   "lint-staged": {
-    "*": "npm run lint"
+    "*": "npm run lint && echo 'lint check for staging'"
   }
 }
