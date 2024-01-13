@@ -15,22 +15,23 @@
     "url": "git@github.com:sankalpadevs/aether.ui.git"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
     "esbuild": "^0.19.11",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
     "fast-glob": "^3.3.2",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "lint-staged": "^15.2.0"
   },
   "scripts": {
     "aetherui-react": "npm run --workspace=aetherui-react",
     "build": "npm run aetherui-react build-clean",
-    "lint": "./scripts/lint.sh"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "lint": "./scripts/lint.sh",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "*": "npm run lint && echo 'lint check for staging'"
+    "*": "npm run lint"
   }
 }
