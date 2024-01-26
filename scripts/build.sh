@@ -78,6 +78,9 @@ if [ "$link_package" == true ]; then
   cp $PWD/package.json $DST/package.json
 fi
 
+# Copy CSS styles also
+cp -r $PWD/src/styles $DST/styles/
+
 # Wait for all the scripts to finish
 wait
 

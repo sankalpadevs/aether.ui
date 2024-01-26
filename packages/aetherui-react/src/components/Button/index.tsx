@@ -1,13 +1,9 @@
 import React from "react";
 
-export const Button = () => {
-  return (
-    <button
-      onClick={() => {
-        console.log("clicked!");
-      }}
-    >
-      Click me!
-    </button>
+export const Button = React.forwardRef(() => {
+  return React.createElement(
+    "button",
+    { className: "aetherui-btn" },
+    "Click Me!",
   );
-};
+});

@@ -13,7 +13,7 @@ fastGlob.sync([process.argv.slice(2).join("")]).forEach((file) => {
     (full, a, b, _, d) => {
       // For idempotency reasons, if `.js` already exists, then we can skip this. This allows us to
       // run this script over and over again without adding .js files every time.
-      if (d.endsWith(".js")) {
+      if (d.endsWith(".js") || d.endsWith(".css")) {
         return full;
       }
 

@@ -4,6 +4,7 @@
   "description": "",
   "private": false,
   "main": "dist/index.cjs",
+  "styles": "dist/styles/index.css",
   "typings": "dist/index.d.ts",
   "module": "dist/aether.ui.esm.js",
   "files": [
