@@ -78,8 +78,9 @@ if [ "$link_package" == true ]; then
   cp $PWD/package.json $DST/package.json
 fi
 
-# Copy CSS styles also
-cp -r $PWD/src/styles $DST/styles/
+# Generate build css file using tailwindcss and copy it
+npx tailwindcss build -o ./pre-build/build.css
+cp -r $PWD/pre-build/build.css $DST/index.css
 
 # Wait for all the scripts to finish
 wait
