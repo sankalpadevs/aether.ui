@@ -9,7 +9,7 @@
   "workspaces": [
     "./packages/*"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@github.com:sankalpadevs/aether.ui.git"
