@@ -1,0 +1,8 @@
+@import "./index.css";
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/Inter/static/Inter-Regular.ttf") format("ttf");
+}

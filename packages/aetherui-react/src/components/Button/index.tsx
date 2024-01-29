@@ -1,13 +1,24 @@
 import React from "react";
 // import {useTheme} from "../../context/index";
 
-export const Button = React.forwardRef(() => {
-  // const {theme} = useTheme()
+function _Button() {
+  let variant = "default";
+  let variantclass = "";
+  switch (variant) {
+    case "primary":
+      variantclass =
+        "aetherui-bg-primary aetherui-text-primary-contrast aetherui-font-semibold";
+      break;
+    case "default":
+      variantclass = "aetherui-bg-grayscale-5 aetherui-text-primary-text";
+  }
   return (
     <button
-      className={`aetherui-bg-bg-primary aetherui-text-text-primary aetherui-p-6`}
+      className={`${variantclass} aetherui-py-2 aetherui-font-inter aetherui-text-base aetherui-px-3.5 aetherui-rounded-md aetherui-border-0 aetherui-outline-0`}
     >
-      Click me!
+      Button
     </button>
   );
-});
+}
+
+export const Button = React.forwardRef(_Button);
