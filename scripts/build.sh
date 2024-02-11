@@ -57,8 +57,8 @@ NODE_ENV=production  npx esbuild $INPUT_FILES --format=esm --outdir=$DST        
 NODE_ENV=production  npx esbuild $input       --format=esm --outfile=$DST/$name.esm.js --outbase=$SRC --minify --pure:React.createElement --define:process.env.TEST_BYPASS_TRACKED_POINTER="false" --define:__DEV__="false" ${sharedOptions[@]} &
 
 # Common JS
-NODE_ENV=production  npx esbuild $input --format=cjs --outfile=$DST/$name.prod.cjs --minify --bundle --pure:React.createElement --define:process.env.TEST_BYPASS_TRACKED_POINTER="false" --define:__DEV__="false" ${sharedOptions[@]} $esbuild_flags &
-NODE_ENV=development npx esbuild $input --format=cjs --outfile=$DST/$name.dev.cjs           --bundle --pure:React.createElement --define:process.env.TEST_BYPASS_TRACKED_POINTER="false" --define:__DEV__="true" ${sharedOptions[@]} $esbuild_flags &
+NODE_ENV=production  npx esbuild $input --format=cjs --outfile=$DST/$name.prod.cjs --minify --loader:.ttf=file --bundle --pure:React.createElement --define:process.env.TEST_BYPASS_TRACKED_POINTER="false" --define:__DEV__="false" ${sharedOptions[@]} $esbuild_flags &
+NODE_ENV=development npx esbuild $input --format=cjs --outfile=$DST/$name.dev.cjs           --loader:.ttf=file --bundle --pure:React.createElement --define:process.env.TEST_BYPASS_TRACKED_POINTER="false" --define:__DEV__="true" ${sharedOptions[@]} $esbuild_flags &
 
 # Generate ESM types
 tsc --emitDeclarationOnly --outDir $DST &
@@ -71,6 +71,9 @@ cp $DST/index.d.ts $DST/index.d.cts
 
 # Copy pre-build files over
 cp -rf ./pre-build/* $DST/
+
+# Copy assets files over
+cp -R -p ./$SRC/assets $DST
 
 # Copy package.json to $DST for linking
 if [ "$link_package" == true ]; then
