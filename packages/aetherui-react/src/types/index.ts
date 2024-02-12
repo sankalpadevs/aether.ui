@@ -26,6 +26,12 @@ export const generateTailwindClassWithTone = <
   return `${namespace}-${subNamespace}-${tone}` as TailwindClass<N, S, T>;
 };
 
+export type TODO = any;
+
+type DeepPartial<T> = {
+  [P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P];
+};
+
 export type ThemeProperties = {
   color: {
     base: {
@@ -97,6 +103,15 @@ export type ThemeProperties = {
 export type Theme = {
   light: ThemeProperties;
   dark: ThemeProperties;
+};
+
+export type PartialTheme = {
+  light?: DeepPartial<ThemeProperties>;
+  dark?: DeepPartial<ThemeProperties>;
+};
+
+export type ThemeVariables = {
+  [key: string]: TODO;
 };
 
 // type InferClassNameFromValues<Class extends TailwindClass<string, string, string | undefined>> = Class extends `${infer N}-${infer S}-${infer T}`
