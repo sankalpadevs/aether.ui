@@ -1,0 +1,83 @@
+.aetherui-h1 {
+  font-weight: var(--aetherui-typography-h1-weight);
+  font-size: var(--aetherui-typography-h1-size);
+  letter-spacing: var(--aetherui-typography-h1-letterSpacing);
+  line-height: var(--aetherui-typography-h1-lineHeight);
+  display: inline-block;
+}
+
+.aetherui-h2 {
+  font-weight: var(--aetherui-typography-h2-weight);
+  font-size: var(--aetherui-typography-h2-size);
+  letter-spacing: var(--aetherui-typography-h2-letterSpacing);
+  line-height: var(--aetherui-typography-h2-lineHeight);
+  display: inline-block;
+}
+
+.aetherui-h3 {
+  font-weight: var(--aetherui-typography-h3-weight);
+  font-size: var(--aetherui-typography-h3-size);
+  letter-spacing: var(--aetherui-typography-h3-letterSpacing);
+  line-height: var(--aetherui-typography-h3-lineHeight);
+  display: inline-block;
+}
+
+.aetherui-h4 {
+  font-weight: var(--aetherui-typography-h4-weight);
+  font-size: var(--aetherui-typography-h4-size);
+  letter-spacing: var(--aetherui-typography-h4-letterSpacing);
+  line-height: var(--aetherui-typography-h4-lineHeight);
+  display: inline-block;
+}
+
+.aetherui-h5 {
+  font-weight: var(--aetherui-typography-h5-weight);
+  font-size: var(--aetherui-typography-h5-size);
+  letter-spacing: var(--aetherui-typography-h5-letterSpacing);
+  line-height: var(--aetherui-typography-h5-lineHeight);
+  display: inline-block;
+}
+
+.aetherui-h6 {
+  font-weight: var(--aetherui-typography-h6-weight);
+  font-size: var(--aetherui-typography-h6-size);
+  letter-spacing: var(--aetherui-typography-h6-letterSpacing);
+  line-height: var(--aetherui-typography-h6-lineHeight);
+  display: inline-block;
+}
+
+.aetherui-font-weight-100 {
+  font-weight: 100;
+}
+
+.aetherui-font-weight-200 {
+  font-weight: 200;
+}
+
+.aetherui-font-weight-300 {
+  font-weight: 300;
+}
+
+.aetherui-font-weight-400 {
+  font-weight: 400;
+}
+
+.aetherui-font-weight-500 {
+  font-weight: 500;
+}
+
+.aetherui-font-weight-600 {
+  font-weight: 600;
+}
+
+.aetherui-font-weight-700 {
+  font-weight: 700;
+}
+
+.aetherui-font-weight-800 {
+  font-weight: 800;
+}
+
+.aetherui-font-weight-900 {
+  font-weight: 900;
+}

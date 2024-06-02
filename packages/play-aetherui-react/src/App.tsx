@@ -1,11 +1,10 @@
 import React from "react";
 import "./App.css";
-import SampleButton from "./SampleButton";
-import { ThemeProvider } from "aetherui-react";
+import { ThemeProvider, Typography } from "aetherui-react";
 function App() {
   return (
     <ThemeProvider>
-      <SampleButton />
+      <Typography>Hello</Typography>
     </ThemeProvider>
   );
 }
