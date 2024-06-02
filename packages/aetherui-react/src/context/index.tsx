@@ -1,37 +1,22 @@
-import React, { useContext, useState, createContext } from "react";
+import React, { useContext, createContext } from "react";
 import { aetheruiTheme } from "../constants/theme";
-import { PartialTheme, Theme } from "../types/index";
-import { convertToCSSVariables } from "../utils/index";
+import { Theme } from "../types";
+import { registerTheme } from "../utils/utils";
 
 const ThemeContext = createContext<{
   theme: Theme;
-  updateTheme: (newTheme: PartialTheme) => void;
 }>({
   theme: aetheruiTheme,
-  updateTheme: () => {
-    return;
-  },
 });
 ThemeContext.displayName = "ThemeContext";
 
-export const ThemeProvider = ({
-  children,
-  providedTheme,
-}: {
-  children: React.ReactNode;
-  providedTheme?: Theme;
-}) => {
-  const [customTheme, setCustomTheme] = useState(
-    providedTheme ?? aetheruiTheme,
-  );
+export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
+  const root = document.querySelector("#root") as HTMLElement;
 
-  const updateTheme = (newTheme: PartialTheme) => {
-    console.log(convertToCSSVariables(newTheme, "aetherui-", "light", "dark"));
-    setCustomTheme({ ...customTheme, ...(newTheme as Theme) });
-  };
+  registerTheme(aetheruiTheme, root);
 
   return (
-    <ThemeContext.Provider value={{ theme: customTheme, updateTheme }}>
+    <ThemeContext.Provider value={{ theme: aetheruiTheme }}>
       {children}
     </ThemeContext.Provider>
   );
@@ -45,9 +30,6 @@ export const useTheme = () => {
     );
     return {
       theme: aetheruiTheme,
-      updateTheme: () => {
-        return;
-      },
     };
   }
   return context;
