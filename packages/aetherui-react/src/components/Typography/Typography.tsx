@@ -2,9 +2,9 @@ import React from "react";
 import { TypographyProps } from "../../types";
 import { cbnCls } from "../../utils/utils";
 
-export function Typography({ variant: Component, ...props }: TypographyProps) {
+export function Typography({ as: Component, ...props }: TypographyProps) {
   let className = "";
-  switch (Component) {
+  switch (props.variant) {
     case "h1":
       className = "aetherui-h1";
       break;
@@ -28,9 +28,16 @@ export function Typography({ variant: Component, ...props }: TypographyProps) {
       break;
   }
   if (!Component) Component = "h1";
+  if (!props.color) props.color = "black";
 
   return (
-    <Component className={cbnCls(className, props.className)}>
+    <Component
+      className={cbnCls(
+        className,
+        props.className,
+        `aetherui-text-color-${props.color}`,
+      )}
+    >
       {props.children}
     </Component>
   );
