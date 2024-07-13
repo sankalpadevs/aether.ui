@@ -2,6 +2,9 @@
 @import "overrides.css";
 @import "colors.css";
 @import "typography.css";
+@import "component.css";
+@import "common.css";
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */ /*

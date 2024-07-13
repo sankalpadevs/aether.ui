@@ -1,9 +1,39 @@
+.aetherui-color-text-primary {
+  color: var(--aetherui-color-text-primary);
+}
+
+.aetherui-color-text-secondary {
+  color: var(--aetherui-color-text-secondary);
+}
+
+.aetherui-color-text-error {
+  color: var(--aetherui-color-text-error);
+}
+
+.aetherui-color-text-disabled {
+  color: var(--aetherui-color-text-disabled);
+}
+
+.aetherui-text-color-error {
+  color: var(--aetherui-color-text-error);
+}
+
+.aetherui-text-color-success {
+  color: var(--aetherui-color-text-success);
+}
+
+.aetherui-text-color-warning {
+  color: var(--aetherui-color-text-warning);
+}
+
 .aetherui-color-bg-base {
   background: var(--aetherui-color-bg-base);
 }
+
 .aetherui-text-color-black {
   color: var(--aetherui-common-color-black);
 }
+
 .aetherui-bg-color-black {
   background-color: var(--aetherui-common-color-black);
 }
@@ -11,6 +41,7 @@
 .aetherui-text-color-white {
   color: var(--aetherui-common-color-white);
 }
+
 .aetherui-bg-color-white {
   background-color: var(--aetherui-common-color-white);
 }
@@ -18,6 +49,7 @@
 .aetherui-text-color-red {
   color: var(--aetherui-common-color-red);
 }
+
 .aetherui-bg-color-red {
   background-color: var(--aetherui-common-color-red);
 }
@@ -25,6 +57,7 @@
 .aetherui-text-color-lime {
   color: var(--aetherui-common-color-lime);
 }
+
 .aetherui-bg-color-lime {
   background-color: var(--aetherui-common-color-lime);
 }
@@ -32,6 +65,7 @@
 .aetherui-text-color-blue {
   color: var(--aetherui-common-color-blue);
 }
+
 .aetherui-bg-color-blue {
   background-color: var(--aetherui-common-color-blue);
 }
@@ -39,6 +73,7 @@
 .aetherui-text-color-yellow {
   color: var(--aetherui-common-color-yellow);
 }
+
 .aetherui-bg-color-yellow {
   background-color: var(--aetherui-common-color-yellow);
 }
@@ -46,6 +81,7 @@
 .aetherui-text-color-cyan {
   color: var(--aetherui-common-color-cyan);
 }
+
 .aetherui-bg-color-cyan {
   background-color: var(--aetherui-common-color-cyan);
 }
@@ -53,6 +89,7 @@
 .aetherui-text-color-magenta {
   color: var(--aetherui-common-color-magenta);
 }
+
 .aetherui-bg-color-magenta {
   background-color: var(--aetherui-common-color-magenta);
 }
@@ -60,6 +97,7 @@
 .aetherui-text-color-silver {
   color: var(--aetherui-common-color-silver);
 }
+
 .aetherui-bg-color-silver {
   background-color: var(--aetherui-common-color-silver);
 }
@@ -67,6 +105,7 @@
 .aetherui-text-color-gray {
   color: var(--aetherui-common-color-gray);
 }
+
 .aetherui-bg-color-gray {
   background-color: var(--aetherui-common-color-gray);
 }
@@ -74,6 +113,7 @@
 .aetherui-text-color-maroon {
   color: var(--aetherui-common-color-maroon);
 }
+
 .aetherui-bg-color-maroon {
   background-color: var(--aetherui-common-color-maroon);
 }
@@ -81,6 +121,7 @@
 .aetherui-text-color-olive {
   color: var(--aetherui-common-color-olive);
 }
+
 .aetherui-bg-color-olive {
   background-color: var(--aetherui-common-color-olive);
 }
@@ -88,6 +129,7 @@
 .aetherui-text-color-green {
   color: var(--aetherui-common-color-green);
 }
+
 .aetherui-bg-color-green {
   background-color: var(--aetherui-common-color-green);
 }
@@ -95,6 +137,7 @@
 .aetherui-text-color-purple {
   color: var(--aetherui-common-color-purple);
 }
+
 .aetherui-bg-color-purple {
   background-color: var(--aetherui-common-color-purple);
 }
@@ -102,6 +145,7 @@
 .aetherui-text-color-teal {
   color: var(--aetherui-common-color-teal);
 }
+
 .aetherui-bg-color-teal {
   background-color: var(--aetherui-common-color-teal);
 }
@@ -109,6 +153,7 @@
 .aetherui-text-color-navy {
   color: var(--aetherui-common-color-navy);
 }
+
 .aetherui-bg-color-navy {
   background-color: var(--aetherui-common-color-navy);
 }
@@ -116,6 +161,7 @@
 .aetherui-text-color-orange {
   color: var(--aetherui-common-color-orange);
 }
+
 .aetherui-bg-color-orange {
   background-color: var(--aetherui-common-color-orange);
 }
@@ -123,6 +169,7 @@
 .aetherui-text-color-aliceblue {
   color: var(--aetherui-common-color-aliceblue);
 }
+
 .aetherui-bg-color-aliceblue {
   background-color: var(--aetherui-common-color-aliceblue);
 }
@@ -130,6 +177,7 @@
 .aetherui-text-color-antiquewhite {
   color: var(--aetherui-common-color-antiquewhite);
 }
+
 .aetherui-bg-color-antiquewhite {
   background-color: var(--aetherui-common-color-antiquewhite);
 }
@@ -137,6 +185,7 @@
 .aetherui-text-color-aqua {
   color: var(--aetherui-common-color-aqua);
 }
+
 .aetherui-bg-color-aqua {
   background-color: var(--aetherui-common-color-aqua);
 }
@@ -144,6 +193,7 @@
 .aetherui-text-color-aquamarine {
   color: var(--aetherui-common-color-aquamarine);
 }
+
 .aetherui-bg-color-aquamarine {
   background-color: var(--aetherui-common-color-aquamarine);
 }
@@ -151,6 +201,7 @@
 .aetherui-text-color-azure {
   color: var(--aetherui-common-color-azure);
 }
+
 .aetherui-bg-color-azure {
   background-color: var(--aetherui-common-color-azure);
 }
@@ -158,6 +209,7 @@
 .aetherui-text-color-beige {
   color: var(--aetherui-common-color-beige);
 }
+
 .aetherui-bg-color-beige {
   background-color: var(--aetherui-common-color-beige);
 }
@@ -165,6 +217,7 @@
 .aetherui-text-color-bisque {
   color: var(--aetherui-common-color-bisque);
 }
+
 .aetherui-bg-color-bisque {
   background-color: var(--aetherui-common-color-bisque);
 }
@@ -172,6 +225,7 @@
 .aetherui-text-color-blanchedalmond {
   color: var(--aetherui-common-color-blanchedalmond);
 }
+
 .aetherui-bg-color-blanchedalmond {
   background-color: var(--aetherui-common-color-blanchedalmond);
 }
@@ -179,6 +233,7 @@
 .aetherui-text-color-blueviolet {
   color: var(--aetherui-common-color-blueviolet);
 }
+
 .aetherui-bg-color-blueviolet {
   background-color: var(--aetherui-common-color-blueviolet);
 }
@@ -186,6 +241,7 @@
 .aetherui-text-color-brown {
   color: var(--aetherui-common-color-brown);
 }
+
 .aetherui-bg-color-brown {
   background-color: var(--aetherui-common-color-brown);
 }
@@ -193,6 +249,7 @@
 .aetherui-text-color-burlywood {
   color: var(--aetherui-common-color-burlywood);
 }
+
 .aetherui-bg-color-burlywood {
   background-color: var(--aetherui-common-color-burlywood);
 }
@@ -200,6 +257,7 @@
 .aetherui-text-color-cadetblue {
   color: var(--aetherui-common-color-cadetblue);
 }
+
 .aetherui-bg-color-cadetblue {
   background-color: var(--aetherui-common-color-cadetblue);
 }
@@ -207,6 +265,7 @@
 .aetherui-text-color-chartreuse {
   color: var(--aetherui-common-color-chartreuse);
 }
+
 .aetherui-bg-color-chartreuse {
   background-color: var(--aetherui-common-color-chartreuse);
 }
@@ -214,6 +273,7 @@
 .aetherui-text-color-chocolate {
   color: var(--aetherui-common-color-chocolate);
 }
+
 .aetherui-bg-color-chocolate {
   background-color: var(--aetherui-common-color-chocolate);
 }
@@ -221,6 +281,7 @@
 .aetherui-text-color-coral {
   color: var(--aetherui-common-color-coral);
 }
+
 .aetherui-bg-color-coral {
   background-color: var(--aetherui-common-color-coral);
 }
@@ -228,6 +289,7 @@
 .aetherui-text-color-cornflowerblue {
   color: var(--aetherui-common-color-cornflowerblue);
 }
+
 .aetherui-bg-color-cornflowerblue {
   background-color: var(--aetherui-common-color-cornflowerblue);
 }
@@ -235,6 +297,7 @@
 .aetherui-text-color-cornsilk {
   color: var(--aetherui-common-color-cornsilk);
 }
+
 .aetherui-bg-color-cornsilk {
   background-color: var(--aetherui-common-color-cornsilk);
 }
@@ -242,6 +305,7 @@
 .aetherui-text-color-crimson {
   color: var(--aetherui-common-color-crimson);
 }
+
 .aetherui-bg-color-crimson {
   background-color: var(--aetherui-common-color-crimson);
 }
@@ -249,6 +313,7 @@
 .aetherui-text-color-darkblue {
   color: var(--aetherui-common-color-darkblue);
 }
+
 .aetherui-bg-color-darkblue {
   background-color: var(--aetherui-common-color-darkblue);
 }
@@ -256,6 +321,7 @@
 .aetherui-text-color-darkcyan {
   color: var(--aetherui-common-color-darkcyan);
 }
+
 .aetherui-bg-color-darkcyan {
   background-color: var(--aetherui-common-color-darkcyan);
 }
@@ -263,6 +329,7 @@
 .aetherui-text-color-darkgoldenrod {
   color: var(--aetherui-common-color-darkgoldenrod);
 }
+
 .aetherui-bg-color-darkgoldenrod {
   background-color: var(--aetherui-common-color-darkgoldenrod);
 }
@@ -270,6 +337,7 @@
 .aetherui-text-color-darkgray {
   color: var(--aetherui-common-color-darkgray);
 }
+
 .aetherui-bg-color-darkgray {
   background-color: var(--aetherui-common-color-darkgray);
 }
@@ -277,6 +345,7 @@
 .aetherui-text-color-darkgreen {
   color: var(--aetherui-common-color-darkgreen);
 }
+
 .aetherui-bg-color-darkgreen {
   background-color: var(--aetherui-common-color-darkgreen);
 }
@@ -284,6 +353,7 @@
 .aetherui-text-color-darkkhaki {
   color: var(--aetherui-common-color-darkkhaki);
 }
+
 .aetherui-bg-color-darkkhaki {
   background-color: var(--aetherui-common-color-darkkhaki);
 }
@@ -291,6 +361,7 @@
 .aetherui-text-color-darkmagenta {
   color: var(--aetherui-common-color-darkmagenta);
 }
+
 .aetherui-bg-color-darkmagenta {
   background-color: var(--aetherui-common-color-darkmagenta);
 }
@@ -298,6 +369,7 @@
 .aetherui-text-color-darkolivegreen {
   color: var(--aetherui-common-color-darkolivegreen);
 }
+
 .aetherui-bg-color-darkolivegreen {
   background-color: var(--aetherui-common-color-darkolivegreen);
 }
@@ -305,6 +377,7 @@
 .aetherui-text-color-darkorange {
   color: var(--aetherui-common-color-darkorange);
 }
+
 .aetherui-bg-color-darkorange {
   background-color: var(--aetherui-common-color-darkorange);
 }
@@ -312,6 +385,7 @@
 .aetherui-text-color-darkorchid {
   color: var(--aetherui-common-color-darkorchid);
 }
+
 .aetherui-bg-color-darkorchid {
   background-color: var(--aetherui-common-color-darkorchid);
 }
@@ -319,6 +393,7 @@
 .aetherui-text-color-darkred {
   color: var(--aetherui-common-color-darkred);
 }
+
 .aetherui-bg-color-darkred {
   background-color: var(--aetherui-common-color-darkred);
 }
@@ -326,6 +401,7 @@
 .aetherui-text-color-darksalmon {
   color: var(--aetherui-common-color-darksalmon);
 }
+
 .aetherui-bg-color-darksalmon {
   background-color: var(--aetherui-common-color-darksalmon);
 }
@@ -333,6 +409,7 @@
 .aetherui-text-color-darkseagreen {
   color: var(--aetherui-common-color-darkseagreen);
 }
+
 .aetherui-bg-color-darkseagreen {
   background-color: var(--aetherui-common-color-darkseagreen);
 }
@@ -340,6 +417,7 @@
 .aetherui-text-color-darkslateblue {
   color: var(--aetherui-common-color-darkslateblue);
 }
+
 .aetherui-bg-color-darkslateblue {
   background-color: var(--aetherui-common-color-darkslateblue);
 }
@@ -347,6 +425,7 @@
 .aetherui-text-color-darkslategray {
   color: var(--aetherui-common-color-darkslategray);
 }
+
 .aetherui-bg-color-darkslategray {
   background-color: var(--aetherui-common-color-darkslategray);
 }
@@ -354,6 +433,7 @@
 .aetherui-text-color-darkturquoise {
   color: var(--aetherui-common-color-darkturquoise);
 }
+
 .aetherui-bg-color-darkturquoise {
   background-color: var(--aetherui-common-color-darkturquoise);
 }
@@ -361,6 +441,7 @@
 .aetherui-text-color-darkviolet {
   color: var(--aetherui-common-color-darkviolet);
 }
+
 .aetherui-bg-color-darkviolet {
   background-color: var(--aetherui-common-color-darkviolet);
 }
@@ -368,6 +449,7 @@
 .aetherui-text-color-deeppink {
   color: var(--aetherui-common-color-deeppink);
 }
+
 .aetherui-bg-color-deeppink {
   background-color: var(--aetherui-common-color-deeppink);
 }
@@ -375,6 +457,7 @@
 .aetherui-text-color-deepskyblue {
   color: var(--aetherui-common-color-deepskyblue);
 }
+
 .aetherui-bg-color-deepskyblue {
   background-color: var(--aetherui-common-color-deepskyblue);
 }
@@ -382,6 +465,7 @@
 .aetherui-text-color-dimgray {
   color: var(--aetherui-common-color-dimgray);
 }
+
 .aetherui-bg-color-dimgray {
   background-color: var(--aetherui-common-color-dimgray);
 }
@@ -389,6 +473,7 @@
 .aetherui-text-color-dodgerblue {
   color: var(--aetherui-common-color-dodgerblue);
 }
+
 .aetherui-bg-color-dodgerblue {
   background-color: var(--aetherui-common-color-dodgerblue);
 }
@@ -396,6 +481,7 @@
 .aetherui-text-color-firebrick {
   color: var(--aetherui-common-color-firebrick);
 }
+
 .aetherui-bg-color-firebrick {
   background-color: var(--aetherui-common-color-firebrick);
 }
@@ -403,6 +489,7 @@
 .aetherui-text-color-floralwhite {
   color: var(--aetherui-common-color-floralwhite);
 }
+
 .aetherui-bg-color-floralwhite {
   background-color: var(--aetherui-common-color-floralwhite);
 }
@@ -410,6 +497,7 @@
 .aetherui-text-color-forestgreen {
   color: var(--aetherui-common-color-forestgreen);
 }
+
 .aetherui-bg-color-forestgreen {
   background-color: var(--aetherui-common-color-forestgreen);
 }
@@ -417,6 +505,7 @@
 .aetherui-text-color-fuchsia {
   color: var(--aetherui-common-color-fuchsia);
 }
+
 .aetherui-bg-color-fuchsia {
   background-color: var(--aetherui-common-color-fuchsia);
 }
@@ -424,6 +513,7 @@
 .aetherui-text-color-gainsboro {
   color: var(--aetherui-common-color-gainsboro);
 }
+
 .aetherui-bg-color-gainsboro {
   background-color: var(--aetherui-common-color-gainsboro);
 }
@@ -431,6 +521,7 @@
 .aetherui-text-color-ghostwhite {
   color: var(--aetherui-common-color-ghostwhite);
 }
+
 .aetherui-bg-color-ghostwhite {
   background-color: var(--aetherui-common-color-ghostwhite);
 }
@@ -438,6 +529,7 @@
 .aetherui-text-color-gold {
   color: var(--aetherui-common-color-gold);
 }
+
 .aetherui-bg-color-gold {
   background-color: var(--aetherui-common-color-gold);
 }
@@ -445,6 +537,7 @@
 .aetherui-text-color-goldenrod {
   color: var(--aetherui-common-color-goldenrod);
 }
+
 .aetherui-bg-color-goldenrod {
   background-color: var(--aetherui-common-color-goldenrod);
 }
@@ -452,6 +545,7 @@
 .aetherui-text-color-greenyellow {
   color: var(--aetherui-common-color-greenyellow);
 }
+
 .aetherui-bg-color-greenyellow {
   background-color: var(--aetherui-common-color-greenyellow);
 }
@@ -459,6 +553,7 @@
 .aetherui-text-color-honeydew {
   color: var(--aetherui-common-color-honeydew);
 }
+
 .aetherui-bg-color-honeydew {
   background-color: var(--aetherui-common-color-honeydew);
 }
@@ -466,6 +561,7 @@
 .aetherui-text-color-hotpink {
   color: var(--aetherui-common-color-hotpink);
 }
+
 .aetherui-bg-color-hotpink {
   background-color: var(--aetherui-common-color-hotpink);
 }
@@ -473,6 +569,7 @@
 .aetherui-text-color-indianred {
   color: var(--aetherui-common-color-indianred);
 }
+
 .aetherui-bg-color-indianred {
   background-color: var(--aetherui-common-color-indianred);
 }
@@ -480,6 +577,7 @@
 .aetherui-text-color-indigo {
   color: var(--aetherui-common-color-indigo);
 }
+
 .aetherui-bg-color-indigo {
   background-color: var(--aetherui-common-color-indigo);
 }
@@ -487,6 +585,7 @@
 .aetherui-text-color-ivory {
   color: var(--aetherui-common-color-ivory);
 }
+
 .aetherui-bg-color-ivory {
   background-color: var(--aetherui-common-color-ivory);
 }
@@ -494,6 +593,7 @@
 .aetherui-text-color-khaki {
   color: var(--aetherui-common-color-khaki);
 }
+
 .aetherui-bg-color-khaki {
   background-color: var(--aetherui-common-color-khaki);
 }
@@ -501,6 +601,7 @@
 .aetherui-text-color-lavender {
   color: var(--aetherui-common-color-lavender);
 }
+
 .aetherui-bg-color-lavender {
   background-color: var(--aetherui-common-color-lavender);
 }
@@ -508,6 +609,7 @@
 .aetherui-text-color-lavenderblush {
   color: var(--aetherui-common-color-lavenderblush);
 }
+
 .aetherui-bg-color-lavenderblush {
   background-color: var(--aetherui-common-color-lavenderblush);
 }
@@ -515,6 +617,7 @@
 .aetherui-text-color-lawngreen {
   color: var(--aetherui-common-color-lawngreen);
 }
+
 .aetherui-bg-color-lawngreen {
   background-color: var(--aetherui-common-color-lawngreen);
 }
@@ -522,6 +625,7 @@
 .aetherui-text-color-lemonchiffon {
   color: var(--aetherui-common-color-lemonchiffon);
 }
+
 .aetherui-bg-color-lemonchiffon {
   background-color: var(--aetherui-common-color-lemonchiffon);
 }
@@ -529,6 +633,7 @@
 .aetherui-text-color-lightblue {
   color: var(--aetherui-common-color-lightblue);
 }
+
 .aetherui-bg-color-lightblue {
   background-color: var(--aetherui-common-color-lightblue);
 }
@@ -536,6 +641,7 @@
 .aetherui-text-color-lightcoral {
   color: var(--aetherui-common-color-lightcoral);
 }
+
 .aetherui-bg-color-lightcoral {
   background-color: var(--aetherui-common-color-lightcoral);
 }
@@ -543,6 +649,7 @@
 .aetherui-text-color-lightcyan {
   color: var(--aetherui-common-color-lightcyan);
 }
+
 .aetherui-bg-color-lightcyan {
   background-color: var(--aetherui-common-color-lightcyan);
 }
@@ -550,6 +657,7 @@
 .aetherui-text-color-lightgoldenrodyellow {
   color: var(--aetherui-common-color-lightgoldenrodyellow);
 }
+
 .aetherui-bg-color-lightgoldenrodyellow {
   background-color: var(--aetherui-common-color-lightgoldenrodyellow);
 }
@@ -557,6 +665,7 @@
 .aetherui-text-color-lightgray {
   color: var(--aetherui-common-color-lightgray);
 }
+
 .aetherui-bg-color-lightgray {
   background-color: var(--aetherui-common-color-lightgray);
 }
@@ -564,6 +673,7 @@
 .aetherui-text-color-lightgreen {
   color: var(--aetherui-common-color-lightgreen);
 }
+
 .aetherui-bg-color-lightgreen {
   background-color: var(--aetherui-common-color-lightgreen);
 }
@@ -571,6 +681,7 @@
 .aetherui-text-color-lightpink {
   color: var(--aetherui-common-color-lightpink);
 }
+
 .aetherui-bg-color-lightpink {
   background-color: var(--aetherui-common-color-lightpink);
 }
@@ -578,6 +689,7 @@
 .aetherui-text-color-lightsalmon {
   color: var(--aetherui-common-color-lightsalmon);
 }
+
 .aetherui-bg-color-lightsalmon {
   background-color: var(--aetherui-common-color-lightsalmon);
 }
@@ -585,6 +697,7 @@
 .aetherui-text-color-lightseagreen {
   color: var(--aetherui-common-color-lightseagreen);
 }
+
 .aetherui-bg-color-lightseagreen {
   background-color: var(--aetherui-common-color-lightseagreen);
 }
@@ -592,6 +705,7 @@
 .aetherui-text-color-lightskyblue {
   color: var(--aetherui-common-color-lightskyblue);
 }
+
 .aetherui-bg-color-lightskyblue {
   background-color: var(--aetherui-common-color-lightskyblue);
 }
@@ -599,6 +713,7 @@
 .aetherui-text-color-lightslategray {
   color: var(--aetherui-common-color-lightslategray);
 }
+
 .aetherui-bg-color-lightslategray {
   background-color: var(--aetherui-common-color-lightslategray);
 }
@@ -606,6 +721,7 @@
 .aetherui-text-color-lightsteelblue {
   color: var(--aetherui-common-color-lightsteelblue);
 }
+
 .aetherui-bg-color-lightsteelblue {
   background-color: var(--aetherui-common-color-lightsteelblue);
 }
@@ -613,6 +729,7 @@
 .aetherui-text-color-lightyellow {
   color: var(--aetherui-common-color-lightyellow);
 }
+
 .aetherui-bg-color-lightyellow {
   background-color: var(--aetherui-common-color-lightyellow);
 }
@@ -620,6 +737,7 @@
 .aetherui-text-color-limegreen {
   color: var(--aetherui-common-color-limegreen);
 }
+
 .aetherui-bg-color-limegreen {
   background-color: var(--aetherui-common-color-limegreen);
 }
@@ -627,6 +745,7 @@
 .aetherui-text-color-linen {
   color: var(--aetherui-common-color-linen);
 }
+
 .aetherui-bg-color-linen {
   background-color: var(--aetherui-common-color-linen);
 }
@@ -634,6 +753,7 @@
 .aetherui-text-color-mediumaquamarine {
   color: var(--aetherui-common-color-mediumaquamarine);
 }
+
 .aetherui-bg-color-mediumaquamarine {
   background-color: var(--aetherui-common-color-mediumaquamarine);
 }
@@ -641,6 +761,7 @@
 .aetherui-text-color-mediumblue {
   color: var(--aetherui-common-color-mediumblue);
 }
+
 .aetherui-bg-color-mediumblue {
   background-color: var(--aetherui-common-color-mediumblue);
 }
@@ -648,6 +769,7 @@
 .aetherui-text-color-mediumorchid {
   color: var(--aetherui-common-color-mediumorchid);
 }
+
 .aetherui-bg-color-mediumorchid {
   background-color: var(--aetherui-common-color-mediumorchid);
 }
@@ -655,6 +777,7 @@
 .aetherui-text-color-mediumpurple {
   color: var(--aetherui-common-color-mediumpurple);
 }
+
 .aetherui-bg-color-mediumpurple {
   background-color: var(--aetherui-common-color-mediumpurple);
 }
@@ -662,6 +785,7 @@
 .aetherui-text-color-mediumseagreen {
   color: var(--aetherui-common-color-mediumseagreen);
 }
+
 .aetherui-bg-color-mediumseagreen {
   background-color: var(--aetherui-common-color-mediumseagreen);
 }
@@ -669,6 +793,7 @@
 .aetherui-text-color-mediumslateblue {
   color: var(--aetherui-common-color-mediumslateblue);
 }
+
 .aetherui-bg-color-mediumslateblue {
   background-color: var(--aetherui-common-color-mediumslateblue);
 }
@@ -676,6 +801,7 @@
 .aetherui-text-color-mediumspringgreen {
   color: var(--aetherui-common-color-mediumspringgreen);
 }
+
 .aetherui-bg-color-mediumspringgreen {
   background-color: var(--aetherui-common-color-mediumspringgreen);
 }
@@ -683,6 +809,7 @@
 .aetherui-text-color-mediumturquoise {
   color: var(--aetherui-common-color-mediumturquoise);
 }
+
 .aetherui-bg-color-mediumturquoise {
   background-color: var(--aetherui-common-color-mediumturquoise);
 }
@@ -690,6 +817,7 @@
 .aetherui-text-color-mediumvioletred {
   color: var(--aetherui-common-color-mediumvioletred);
 }
+
 .aetherui-bg-color-mediumvioletred {
   background-color: var(--aetherui-common-color-mediumvioletred);
 }
@@ -697,6 +825,7 @@
 .aetherui-text-color-midnightblue {
   color: var(--aetherui-common-color-midnightblue);
 }
+
 .aetherui-bg-color-midnightblue {
   background-color: var(--aetherui-common-color-midnightblue);
 }
@@ -704,6 +833,7 @@
 .aetherui-text-color-mintcream {
   color: var(--aetherui-common-color-mintcream);
 }
+
 .aetherui-bg-color-mintcream {
   background-color: var(--aetherui-common-color-mintcream);
 }
@@ -711,6 +841,7 @@
 .aetherui-text-color-mistyrose {
   color: var(--aetherui-common-color-mistyrose);
 }
+
 .aetherui-bg-color-mistyrose {
   background-color: var(--aetherui-common-color-mistyrose);
 }
@@ -718,6 +849,7 @@
 .aetherui-text-color-moccasin {
   color: var(--aetherui-common-color-moccasin);
 }
+
 .aetherui-bg-color-moccasin {
   background-color: var(--aetherui-common-color-moccasin);
 }
@@ -725,6 +857,7 @@
 .aetherui-text-color-navajowhite {
   color: var(--aetherui-common-color-navajowhite);
 }
+
 .aetherui-bg-color-navajowhite {
   background-color: var(--aetherui-common-color-navajowhite);
 }
@@ -732,6 +865,7 @@
 .aetherui-text-color-oldlace {
   color: var(--aetherui-common-color-oldlace);
 }
+
 .aetherui-bg-color-oldlace {
   background-color: var(--aetherui-common-color-oldlace);
 }
@@ -739,6 +873,7 @@
 .aetherui-text-color-olivedrab {
   color: var(--aetherui-common-color-olivedrab);
 }
+
 .aetherui-bg-color-olivedrab {
   background-color: var(--aetherui-common-color-olivedrab);
 }
@@ -746,6 +881,7 @@
 .aetherui-text-color-orangered {
   color: var(--aetherui-common-color-orangered);
 }
+
 .aetherui-bg-color-orangered {
   background-color: var(--aetherui-common-color-orangered);
 }
@@ -753,6 +889,7 @@
 .aetherui-text-color-orchid {
   color: var(--aetherui-common-color-orchid);
 }
+
 .aetherui-bg-color-orchid {
   background-color: var(--aetherui-common-color-orchid);
 }
@@ -760,6 +897,7 @@
 .aetherui-text-color-palegoldenrod {
   color: var(--aetherui-common-color-palegoldenrod);
 }
+
 .aetherui-bg-color-palegoldenrod {
   background-color: var(--aetherui-common-color-palegoldenrod);
 }
@@ -767,6 +905,7 @@
 .aetherui-text-color-palegreen {
   color: var(--aetherui-common-color-palegreen);
 }
+
 .aetherui-bg-color-palegreen {
   background-color: var(--aetherui-common-color-palegreen);
 }
@@ -774,6 +913,7 @@
 .aetherui-text-color-paleturquoise {
   color: var(--aetherui-common-color-paleturquoise);
 }
+
 .aetherui-bg-color-paleturquoise {
   background-color: var(--aetherui-common-color-paleturquoise);
 }
@@ -781,6 +921,7 @@
 .aetherui-text-color-palevioletred {
   color: var(--aetherui-common-color-palevioletred);
 }
+
 .aetherui-bg-color-palevioletred {
   background-color: var(--aetherui-common-color-palevioletred);
 }
@@ -788,6 +929,7 @@
 .aetherui-text-color-papayawhip {
   color: var(--aetherui-common-color-papayawhip);
 }
+
 .aetherui-bg-color-papayawhip {
   background-color: var(--aetherui-common-color-papayawhip);
 }
@@ -795,6 +937,7 @@
 .aetherui-text-color-peachpuff {
   color: var(--aetherui-common-color-peachpuff);
 }
+
 .aetherui-bg-color-peachpuff {
   background-color: var(--aetherui-common-color-peachpuff);
 }
@@ -802,6 +945,7 @@
 .aetherui-text-color-peru {
   color: var(--aetherui-common-color-peru);
 }
+
 .aetherui-bg-color-peru {
   background-color: var(--aetherui-common-color-peru);
 }
@@ -809,6 +953,7 @@
 .aetherui-text-color-pink {
   color: var(--aetherui-common-color-pink);
 }
+
 .aetherui-bg-color-pink {
   background-color: var(--aetherui-common-color-pink);
 }
@@ -816,6 +961,7 @@
 .aetherui-text-color-plum {
   color: var(--aetherui-common-color-plum);
 }
+
 .aetherui-bg-color-plum {
   background-color: var(--aetherui-common-color-plum);
 }
@@ -823,6 +969,7 @@
 .aetherui-text-color-powderblue {
   color: var(--aetherui-common-color-powderblue);
 }
+
 .aetherui-bg-color-powderblue {
   background-color: var(--aetherui-common-color-powderblue);
 }
@@ -830,6 +977,7 @@
 .aetherui-text-color-rosybrown {
   color: var(--aetherui-common-color-rosybrown);
 }
+
 .aetherui-bg-color-rosybrown {
   background-color: var(--aetherui-common-color-rosybrown);
 }
@@ -837,6 +985,7 @@
 .aetherui-text-color-royalblue {
   color: var(--aetherui-common-color-royalblue);
 }
+
 .aetherui-bg-color-royalblue {
   background-color: var(--aetherui-common-color-royalblue);
 }
@@ -844,6 +993,7 @@
 .aetherui-text-color-saddlebrown {
   color: var(--aetherui-common-color-saddlebrown);
 }
+
 .aetherui-bg-color-saddlebrown {
   background-color: var(--aetherui-common-color-saddlebrown);
 }
@@ -851,6 +1001,7 @@
 .aetherui-text-color-salmon {
   color: var(--aetherui-common-color-salmon);
 }
+
 .aetherui-bg-color-salmon {
   background-color: var(--aetherui-common-color-salmon);
 }
@@ -858,6 +1009,7 @@
 .aetherui-text-color-sandybrown {
   color: var(--aetherui-common-color-sandybrown);
 }
+
 .aetherui-bg-color-sandybrown {
   background-color: var(--aetherui-common-color-sandybrown);
 }
@@ -865,6 +1017,7 @@
 .aetherui-text-color-seagreen {
   color: var(--aetherui-common-color-seagreen);
 }
+
 .aetherui-bg-color-seagreen {
   background-color: var(--aetherui-common-color-seagreen);
 }
@@ -872,6 +1025,7 @@
 .aetherui-text-color-seashell {
   color: var(--aetherui-common-color-seashell);
 }
+
 .aetherui-bg-color-seashell {
   background-color: var(--aetherui-common-color-seashell);
 }
@@ -879,6 +1033,7 @@
 .aetherui-text-color-sienna {
   color: var(--aetherui-common-color-sienna);
 }
+
 .aetherui-bg-color-sienna {
   background-color: var(--aetherui-common-color-sienna);
 }
@@ -886,6 +1041,7 @@
 .aetherui-text-color-skyblue {
   color: var(--aetherui-common-color-skyblue);
 }
+
 .aetherui-bg-color-skyblue {
   background-color: var(--aetherui-common-color-skyblue);
 }
@@ -893,6 +1049,7 @@
 .aetherui-text-color-slateblue {
   color: var(--aetherui-common-color-slateblue);
 }
+
 .aetherui-bg-color-slateblue {
   background-color: var(--aetherui-common-color-slateblue);
 }
@@ -900,6 +1057,7 @@
 .aetherui-text-color-slategray {
   color: var(--aetherui-common-color-slategray);
 }
+
 .aetherui-bg-color-slategray {
   background-color: var(--aetherui-common-color-slategray);
 }
@@ -907,6 +1065,7 @@
 .aetherui-text-color-snow {
   color: var(--aetherui-common-color-snow);
 }
+
 .aetherui-bg-color-snow {
   background-color: var(--aetherui-common-color-snow);
 }
@@ -914,6 +1073,7 @@
 .aetherui-text-color-springgreen {
   color: var(--aetherui-common-color-springgreen);
 }
+
 .aetherui-bg-color-springgreen {
   background-color: var(--aetherui-common-color-springgreen);
 }
@@ -921,6 +1081,7 @@
 .aetherui-text-color-steelblue {
   color: var(--aetherui-common-color-steelblue);
 }
+
 .aetherui-bg-color-steelblue {
   background-color: var(--aetherui-common-color-steelblue);
 }
@@ -928,6 +1089,7 @@
 .aetherui-text-color-tan {
   color: var(--aetherui-common-color-tan);
 }
+
 .aetherui-bg-color-tan {
   background-color: var(--aetherui-common-color-tan);
 }
@@ -935,6 +1097,7 @@
 .aetherui-text-color-thistle {
   color: var(--aetherui-common-color-thistle);
 }
+
 .aetherui-bg-color-thistle {
   background-color: var(--aetherui-common-color-thistle);
 }
@@ -942,6 +1105,7 @@
 .aetherui-text-color-tomato {
   color: var(--aetherui-common-color-tomato);
 }
+
 .aetherui-bg-color-tomato {
   background-color: var(--aetherui-common-color-tomato);
 }
@@ -949,6 +1113,7 @@
 .aetherui-text-color-turquoise {
   color: var(--aetherui-common-color-turquoise);
 }
+
 .aetherui-bg-color-turquoise {
   background-color: var(--aetherui-common-color-turquoise);
 }
@@ -956,6 +1121,7 @@
 .aetherui-text-color-violet {
   color: var(--aetherui-common-color-violet);
 }
+
 .aetherui-bg-color-violet {
   background-color: var(--aetherui-common-color-violet);
 }
@@ -963,6 +1129,7 @@
 .aetherui-text-color-wheat {
   color: var(--aetherui-common-color-wheat);
 }
+
 .aetherui-bg-color-wheat {
   background-color: var(--aetherui-common-color-wheat);
 }
@@ -970,6 +1137,7 @@
 .aetherui-text-color-whitesmoke {
   color: var(--aetherui-common-color-whitesmoke);
 }
+
 .aetherui-bg-color-whitesmoke {
   background-color: var(--aetherui-common-color-whitesmoke);
 }
@@ -977,6 +1145,7 @@
 .aetherui-text-color-yellowgreen {
   color: var(--aetherui-common-color-yellowgreen);
 }
+
 .aetherui-bg-color-yellowgreen {
   background-color: var(--aetherui-common-color-yellowgreen);
 }

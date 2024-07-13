@@ -46,6 +46,8 @@
   display: inline-block;
 }
 
+/************************* FONT WEIGHT *************************/
+
 .aetherui-font-weight-100 {
   font-weight: 100;
 }
@@ -80,4 +82,24 @@
 
 .aetherui-font-weight-900 {
   font-weight: 900;
+}
+
+/************************* FONT SIZE *************************/
+
+.aetherui-font-size-0875 {
+  font-size: 0.875rem;
+}
+
+.aetherui-font-size-075 {
+  font-size: 0.75rem;
+}
+
+/************************* TEXT ALIGN *************************/
+
+.aetherui-text-align-right {
+  text-align: right;
+}
+
+.aetherui-text-align-center {
+  text-align: center;
 }

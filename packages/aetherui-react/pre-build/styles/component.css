@@ -1,0 +1,445 @@
+/****************************************** FORM ******************************************/
+
+/************************ INPUT COMMON ************************/
+
+.aetherui-input-label {
+  color: var(--aetherui-color-text-secondary);
+}
+
+.aetherui-input-error {
+  background-color: var(--aetherui-color-bg-error-10) !important;
+}
+
+/************************ TEXT INPUT BASE ************************/
+
+.aetherui-textinput-wrapper-base {
+  background-color: var(--aetherui-components-TextInput-colors-bg-base);
+  border-width: var(--aetherui-components-TextInput-border-base-width);
+  border-color: var(--aetherui-components-TextInput-border-base-color);
+  border-style: var(--aetherui-components-TextInput-border-base-style);
+  height: var(--aetherui-components-TextInput-height-base);
+  width: fit-content;
+}
+
+.aetherui-textinput-base {
+  background-color: transparent;
+  color: var(--aetherui-color-text-body);
+  width: var(--aetherui-components-TextInput-width);
+  outline: none;
+}
+
+.aetherui-textinput-base:disabled {
+  color: var(--aetherui-color-text-disabled);
+}
+
+.aetherui-textinput-base-prefix {
+  color: var(--aetherui-color-text-secondary);
+}
+
+.aetherui-textinput-base-suffix {
+  color: var(--aetherui-color-text-secondary);
+}
+
+.aetherui-textinput-base-focus-visible {
+  outline: 1px var(--aetherui-components-TextInput-border-base-style)
+    var(--aetherui-color-bg-primary);
+  border-width: 0;
+}
+
+.aetherui-textinput-base::placeholder {
+  color: var(--aetherui-color-text-tertiary);
+}
+
+/************************ TEXT INPUT DOTTED ************************/
+
+.aetherui-textinput-wrapper-dotted {
+  background-color: var(--aetherui-components-TextInput-colors-bg-dotted);
+  border-width: var(--aetherui-components-TextInput-border-dotted-width);
+  border-color: var(--aetherui-components-TextInput-border-dotted-color);
+  border-style: var(--aetherui-components-TextInput-border-dotted-style);
+  height: var(--aetherui-components-TextInput-height-dotted);
+  width: fit-content;
+}
+
+.aetherui-textinput-dotted {
+  width: var(--aetherui-components-TextInput-width);
+  background-color: transparent;
+  color: var(--aetherui-color-text-body);
+  outline: none;
+}
+
+.aetherui-textinput-dotted:disabled {
+  color: var(--aetherui-color-text-disabled);
+}
+
+.aetherui-textinput-layout-prefix {
+  color: var(--aetherui-color-text-secondary);
+}
+
+.aetherui-textinput-dotted-suffix {
+  color: var(--aetherui-color-text-secondary);
+}
+
+.aetherui-textinput-dotted-focus-visible {
+  outline: 1px var(--aetherui-components-TextInput-border-dotted-style)
+    var(--aetherui-color-bg-primary);
+  border-width: 0;
+}
+
+.aetherui-textinput-dotted::placeholder {
+  color: var(--aetherui-color-text-tertiary);
+}
+
+/************************ NUMBER INPUT BASE ************************/
+
+.aetherui-numberinput-wrapper-base {
+  background-color: var(--aetherui-components-NumberInput-colors-bg-base);
+  border-width: var(--aetherui-components-NumberInput-border-base-width);
+  border-color: var(--aetherui-components-NumberInput-border-base-color);
+  border-style: var(--aetherui-components-NumberInput-border-base-style);
+  height: var(--aetherui-components-NumberInput-height-base);
+  width: fit-content;
+}
+
+.aetherui-numberinput-base {
+  background-color: transparent;
+  color: var(--aetherui-color-text-body);
+  width: var(--aetherui-components-NumberInput-width);
+  outline: none;
+}
+
+.aetherui-numberinput-base:disabled {
+  color: var(--aetherui-color-text-disabled);
+}
+
+.aetherui-numberinput-base-prefix {
+  color: var(--aetherui-color-text-secondary);
+}
+
+.aetherui-numberinput-base-suffix {
+  color: var(--aetherui-color-text-secondary);
+}
+
+.aetherui-numberinput-base-focus-visible {
+  outline: 1px var(--aetherui-components-NumberInput-border-base-style)
+    var(--aetherui-color-bg-primary);
+  border-width: 0;
+}
+
+.aetherui-numberinput-base::placeholder {
+  color: var(--aetherui-color-text-tertiary);
+}
+
+/* Hide the spinner in WebKit browsers */
+.aetherui-numberinput-base::-webkit-outer-spin-button,
+.aetherui-numberinput-base::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide the spinner in Firefox */
+.aetherui-numberinput-base {
+  -moz-appearance: textfield;
+}
+
+/************************ NUMBER INPUT DOTTED ************************/
+
+.aetherui-numberinput-wrapper-dotted {
+  background-color: var(--aetherui-components-NumberInput-colors-bg-dotted);
+  border-width: var(--aetherui-components-NumberInput-border-dotted-width);
+  border-color: var(--aetherui-components-NumberInput-border-dotted-color);
+  border-style: var(--aetherui-components-NumberInput-border-dotted-style);
+  height: var(--aetherui-components-NumberInput-height-dotted);
+  width: fit-content;
+}
+
+.aetherui-numberinput-dotted {
+  background-color: transparent;
+  color: var(--aetherui-color-text-body);
+  width: var(--aetherui-components-NumberInput-width);
+  outline: none;
+}
+
+.aetherui-numberinput-dotted:disabled {
+  color: var(--aetherui-color-text-disabled);
+}
+
+.aetherui-numberinput-dotted-prefix {
+  color: var(--aetherui-color-text-secondary);
+}
+
+.aetherui-numberinput-dotted-suffix {
+  color: var(--aetherui-color-text-secondary);
+}
+
+.aetherui-numberinput-dotted-focus-visible {
+  outline: 1px var(--aetherui-components-NumberInput-border-dotted-style)
+    var(--aetherui-color-bg-primary);
+  border-width: 0;
+}
+
+.aetherui-numberinput-dotted::placeholder {
+  color: var(--aetherui-color-text-tertiary);
+}
+
+/* Hide the spinner in WebKit browsers */
+.aetherui-numberinput-dotted::-webkit-outer-spin-button,
+.aetherui-numberinput-dotted::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide the spinner in Firefox */
+.aetherui-numberinput-dotted {
+  -moz-appearance: textfield;
+}
+
+/************************ TEXTAREA BASE ************************/
+
+.aetherui-textarea-wrapper-base {
+  background-color: var(--aetherui-components-TextArea-colors-bg-base);
+  border-width: var(--aetherui-components-TextArea-border-base-width);
+  border-color: var(--aetherui-components-TextArea-border-base-color);
+  border-style: var(--aetherui-components-TextArea-border-base-style);
+}
+
+.aetherui-textarea-base {
+  background-color: transparent;
+  color: var(--aetherui-color-text-body);
+  outline: none;
+  resize: none;
+}
+
+.aetherui-textarea-base-focus-visible {
+  outline: 1px var(--aetherui-components-TextArea-border-base-style)
+    var(--aetherui-color-bg-primary);
+  border-width: 0;
+}
+
+.aetherui-textarea-base::placeholder {
+  color: var(--aetherui-color-text-tertiary);
+}
+
+/************************ TEXTAREA DOTTED ************************/
+
+.aetherui-textarea-wrapper-dotted {
+  background-color: var(--aetherui-components-TextArea-colors-bg-dotted);
+  border-width: var(--aetherui-components-TextArea-border-dotted-width);
+  border-color: var(--aetherui-components-TextArea-border-dotted-color);
+  border-style: var(--aetherui-components-TextArea-border-dotted-style);
+}
+
+.aetherui-textarea-dotted {
+  background-color: transparent;
+  color: var(--aetherui-color-text-body);
+  outline: none;
+  resize: none;
+}
+
+.aetherui-textarea-dotted-focus-visible {
+  outline: 1px var(--aetherui-components-TextArea-border-dotted-style)
+    var(--aetherui-color-bg-primary);
+  border-width: 0;
+}
+
+.aetherui-textarea-dotted::placeholder {
+  color: var(--aetherui-color-text-tertiary);
+}
+
+/************************ PASSWORD INPUT ************************/
+
+.aetherui-passwordinput-wrapper {
+  background-color: var(--aetherui-components-PasswordInput-colors-bg);
+  border-width: var(--aetherui-components-PasswordInput-border-width);
+  border-color: var(--aetherui-components-PasswordInput-border-color);
+  border-style: var(--aetherui-components-PasswordInput-border-style);
+}
+
+.aetherui-passwordinput {
+  background-color: transparent;
+  color: var(--aetherui-color-text-body);
+  width: var(--aetherui-components-PasswordInput-width);
+  outline: none;
+}
+
+.aetherui-passwordinput-focus-visible {
+  outline: 1px var(--aetherui-components-PasswordInput-border-style)
+    var(--aetherui-color-bg-primary);
+  border-width: 0;
+}
+
+.aetherui-passwordinput::placeholder {
+  color: var(--aetherui-color-text-tertiary);
+}
+
+/****************************************** BUTTON ******************************************/
+
+/************************ BUTTON - PRIMARY - DEFAULT ************************/
+
+.aetherui-button-primary-default {
+  background-color: var(--aetherui-color-bg-primary);
+  color: var(--aetherui-color-bg-primary-contrast);
+}
+
+/************************ BUTTON - PRIMARY - ERROR ************************/
+
+.aetherui-button-primary-error {
+  background-color: var(--aetherui-color-bg-error);
+  color: var(--aetherui-color-bg-error-contrast);
+}
+
+/************************ BUTTON - PRIMARY - CONTRAST ************************/
+
+.aetherui-button-primary-contrast {
+  background-color: var(--aetherui-color-bg-sub-contrast100);
+  color: var(--aetherui-color-bg-error-contrast);
+}
+
+/************************ BUTTON - PRIMARY - SUCCESS ************************/
+
+.aetherui-button-primary-success {
+  background-color: var(--aetherui-color-bg-success);
+  color: var(--aetherui-color-bg-success-contrast);
+}
+
+/************************ BUTTON - DEFAULT - DEFAULT ************************/
+
+.aetherui-button-default-default {
+  background-color: var(--aetherui-color-bg-sub-contrast5);
+  color: var(--aetherui-color-text-primary);
+}
+
+/************************ BUTTON - DEFAULT - ERROR ************************/
+
+.aetherui-button-default-error {
+  background-color: var(--aetherui-color-bg-sub-contrast5);
+  color: var(--aetherui-color-bg-error);
+}
+
+/************************ BUTTON - DEFAULT - CONTRAST ************************/
+
+.aetherui-button-default-contrast {
+  background-color: var(--aetherui-color-bg-sub-contrast5);
+  color: var(--aetherui-color-bg-sub-contrast100);
+}
+
+/************************ BUTTON - DEFAULT - SUCCESS ************************/
+
+.aetherui-button-default-success {
+  background-color: var(--aetherui-color-bg-sub-contrast5);
+  color: var(--aetherui-color-text-success);
+}
+
+/************************ BUTTON - TERTIARY - DEFAULT ************************/
+
+.aetherui-button-tertiary-default {
+  background-color: transparent;
+  color: var(--aetherui-color-text-primary);
+}
+
+/************************ BUTTON - DEFAULT - ERROR ************************/
+
+.aetherui-button-tertiary-error {
+  background-color: transparent;
+  color: var(--aetherui-color-bg-error);
+}
+
+/************************ BUTTON - DEFAULT - CONTRAST ************************/
+
+.aetherui-button-tertiary-contrast {
+  background-color: transparent;
+  color: var(--aetherui-color-bg-sub-contrast100);
+}
+
+.aetherui-button-tertiary-contrast:disabled {
+  cursor: not-allowed;
+  color: var(--aetherui-color-text-disabled);
+}
+
+/************************ BUTTON - DEFAULT - SUCCESS ************************/
+
+.aetherui-button-tertiary-success {
+  background-color: transparent;
+  color: var(--aetherui-color-text-success);
+}
+
+/****************************************** NOTIFICATION ******************************************/
+
+.aetherui-notification-root {
+  position: absolute;
+}
+
+/************************ NOTIFICATION - POSITION ************************/
+
+.aetherui-notification-top-left {
+  top: 0;
+  left: 0;
+}
+
+.aetherui-notification-top-center {
+  top: 0;
+  left: 50%;
+}
+
+.aetherui-notification-top-right {
+  top: 0;
+  right: 0;
+}
+
+.aetherui-notification-top-left {
+  top: 0;
+  left: 0;
+}
+
+/************************ NOTIFICATION - CHILD ************************/
+
+.aetherui-notification {
+  margin: var(--aetherui-common-notification-margin);
+  width: var(--aetherui-common-notification-width);
+  border-radius: var(--aetherui-common-notification-border-radius);
+  border-width: 1px;
+  border-style: solid;
+  font-size: 14px;
+  box-shadow: var(--aetherui-shadows-l);
+  display: flex;
+  cursor: pointer;
+}
+
+.aetherui-notification-close {
+  display: none;
+  right: 32px;
+}
+
+.aetherui-notification:hover > .aetherui-notification-close {
+  display: grid;
+}
+
+.aetherui-default-notification {
+  background-color: var(--aetherui-color-bg-base-contrast5);
+  border-color: var(--aetherui-color-bg-sub-contrast10);
+  color: var(--aetherui-color-text-body);
+}
+
+.aetherui-success-notification {
+  background-color: var(--aetherui-color-bg-success);
+  border-color: var(--aetherui-color-text-success);
+  color: var(--aetherui-color-bg-success-contrast);
+}
+
+.aetherui-error-notification {
+  background-color: var(--aetherui-color-bg-error);
+  border-color: var(--aetherui-color-text-error);
+  color: var(--aetherui-color-bg-error-contrast);
+}
+
+.aetherui-warning-notification {
+  background-color: var(--aetherui-color-bg-warning);
+  border-color: var(--aetherui-color-text-warning);
+  color: var(--aetherui-color-bg-warning-contrast);
+}
+
+.aetherui-primary-notification {
+  background-color: var(--aetherui-color-bg-primary);
+  border-color: var(--aetherui-color-text-primary);
+  color: var(--aetherui-color-bg-primary-contrast);
+}

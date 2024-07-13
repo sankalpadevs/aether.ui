@@ -1,0 +1,13 @@
+.aetherui-select-none {
+  user-select: none;
+}
+
+.aetherui-cursor-pointer {
+  cursor: pointer;
+}
+
+.aetherui-text-overflow-ellipsis-one {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

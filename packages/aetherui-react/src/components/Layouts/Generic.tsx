@@ -1,30 +1,41 @@
 import React from "react";
-import { GenericComponentProps } from "../../../types";
-import { cbnCls } from "../../../utils/utils";
+import { GenericComponentProps } from "../../types/layout";
+import { cbnCls } from "../../utils/common";
 
 const genericClass = "aetherui-box";
-export function Generic({
-  as: Component,
-  children,
-  overrideClassName,
-  noMargin,
-  noPadding,
-  ...rest
-}: GenericComponentProps) {
+
+const GenericWithoutRef = (
+  {
+    as = "div",
+    children,
+    overrideClassName,
+    noMargin,
+    noPadding,
+    className,
+    ...rest
+  }: GenericComponentProps,
+  ref: React.Ref<HTMLElement>,
+) => {
   // by default <div> is rendered
-  if (!Component) Component = "div";
+  const Component = as as React.ElementType;
 
   return (
     <Component
+      ref={ref}
       {...rest}
       className={cbnCls(
         genericClass,
+        className,
         overrideClassName,
-        noMargin && "aetherui-no-margin",
-        noPadding && "aetherui-no-padding",
+        !noMargin && "aetherui-m-025",
+        !noPadding && "aetherui-p-025",
       )}
     >
       {children}
     </Component>
   );
-}
+};
+
+export const Generic = React.forwardRef(GenericWithoutRef);
+
+Generic.displayName = "Generic";

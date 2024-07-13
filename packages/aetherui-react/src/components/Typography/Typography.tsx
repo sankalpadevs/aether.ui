@@ -1,6 +1,6 @@
 import React from "react";
-import { TypographyProps } from "../../types";
-import { cbnCls } from "../../utils/utils";
+import { TypographyProps } from "../../types/layout";
+import { cbnCls } from "../../utils/common";
 
 export function Typography({ as: Component, ...props }: TypographyProps) {
   let className = "";
