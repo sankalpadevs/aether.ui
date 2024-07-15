@@ -29,6 +29,7 @@
     "play-aetherui-react": "npm run --workspace=play-aetherui-react",
     "play-react": "npm run play-aetherui-react start",
     "build": "npm run aetherui-react build",
+    "build-clean": "npm run aetherui-react build-clean",
     "lint": "./scripts/lint.sh",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
