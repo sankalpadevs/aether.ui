@@ -1,5 +1,6 @@
 import { Theme, TypographyT } from "../types/theme";
-import { emitKeys } from "../constants/theme";
+
+export const emitKeys = ["notificationCategories"];
 
 /**
  * Generate a `Typography` type

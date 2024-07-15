@@ -2,17 +2,19 @@ import React, { ChangeEvent, useEffect, useState } from "react";
 
 import InputWrapper from "./InputWrapper";
 import { Grid } from "../Layouts/Grid";
-
-import { useRefWrapper } from "../../hooks/refwrapper";
-
-import { NumberInputProps } from "../../types/form";
-import { cbnCls } from "../../utils/common";
-import useInput from "../../hooks/input";
 import { Button } from "../Button/Button";
 import { Minus } from "../Icons/Minus";
 import { Plus } from "../Icons/Plus";
 
-const NumberInputWithoutRef = (
+import { DEFAULT_INPUT_TAG, NumberInputProps } from "../../types/components";
+
+import { cbnCls } from "../../utils/common";
+import { forwardRefWithAs } from "../../utils/render";
+
+import useInput from "../../hooks/input";
+import { ExtractElemRef, HasDisplayName, RefProp } from "../../types/render";
+
+function _NumberInput(
   {
     label,
     variant,
@@ -32,8 +34,8 @@ const NumberInputWithoutRef = (
     defaultValue,
     ...elementProps
   }: NumberInputProps,
-  ref: React.RefObject<HTMLInputElement>,
-) => {
+  ref: React.Ref<ExtractElemRef<DEFAULT_INPUT_TAG>>,
+) {
   const [incDisabled, setIncDisabled] = useState(false);
   const [decDisabled, setDecDisabled] = useState(false);
 
@@ -56,7 +58,10 @@ const NumberInputWithoutRef = (
     format,
   );
 
-  if (!variant) variant = "base"; // defaults to base
+  /**
+   * These are the default for variant, counter and textAlign, if nothing is passed in props, they are used.
+   */
+  if (!variant) variant = "base";
   if (!counter) counter = 1;
   if (!textAlign) textAlign = "center";
 
@@ -189,8 +194,10 @@ const NumberInputWithoutRef = (
       </Grid>
     </InputWrapper>
   );
-};
+}
 
-export const NumberInput = useRefWrapper<HTMLInputElement, NumberInputProps>(
-  NumberInputWithoutRef,
-);
+interface _INumberInputProps extends HasDisplayName {
+  (props: NumberInputProps & RefProp<typeof _NumberInput>): JSX.Element;
+}
+
+export const NumberInput = forwardRefWithAs(_NumberInput) as _INumberInputProps;

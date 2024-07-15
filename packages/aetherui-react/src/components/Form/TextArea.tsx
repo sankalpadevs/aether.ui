@@ -3,25 +3,35 @@ import React, { useEffect, useRef, useState } from "react";
 import InputWrapper from "./InputWrapper";
 import { Generic } from "../Layouts/Generic";
 
-import { TextAreaProps } from "../../types/form";
+import { DEFAULT_TEXTAREA_TAG, TextAreaProps } from "../../types/components";
+import { ExtractElemRef, HasDisplayName, RefProp } from "../../types/render";
+
+import { forwardRefWithAs } from "../../utils/render";
 import { cbnCls } from "../../utils/common";
 
-export function TextArea({
-  label,
-  helper,
-  requiredText,
-  errorText,
-  error,
-  variant,
-  onChange,
-  showCount,
-  ...elementProps
-}: TextAreaProps) {
-  //defaults
+function _TextArea(
+  {
+    label,
+    helper,
+    requiredText,
+    errorText,
+    error,
+    variant,
+    onChange,
+    showCount,
+    ...elementProps
+  }: TextAreaProps,
+  ref?: React.Ref<ExtractElemRef<DEFAULT_TEXTAREA_TAG>>,
+) {
+  /**
+   * These are the defaults for variant and showCount, if nothing is passed in props, they are used!
+   */
   if (!variant) variant = "base";
   if (!showCount) showCount = true;
 
-  const inputRef = useRef<HTMLTextAreaElement>(null);
+  const inputRef = (ref ??
+    useRef<HTMLTextAreaElement>(null)) as React.RefObject<HTMLTextAreaElement>;
+
   const [inputLength, setInputLength] = useState(0);
   const [isInputFocused, setIsInputFocused] = useState(false);
   const [isError, setIsError] = useState<React.ReactNode>(null);
@@ -92,3 +102,9 @@ export function TextArea({
     </InputWrapper>
   );
 }
+
+interface _ITextAreaProps extends HasDisplayName {
+  (props: TextAreaProps & RefProp<typeof _TextArea>): JSX.Element;
+}
+
+export const TextArea = forwardRefWithAs(_TextArea) as _ITextAreaProps;

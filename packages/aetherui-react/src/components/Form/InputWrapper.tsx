@@ -2,21 +2,23 @@ import React from "react";
 
 import { Typography } from "../Typography/Typography";
 import { Grid } from "../Layouts/Grid";
+import { Generic } from "../Layouts/Generic";
 
 import { cbnCls } from "../../utils/common";
-import { Generic } from "../Layouts/Generic";
+
+type InputWrapperProps = {
+  label: React.ReactNode;
+  children: React.ReactNode;
+  helper: React.ReactNode;
+  isError: React.ReactNode;
+};
 
 export default function InputWrapper({
   label,
   children,
   helper,
   isError,
-}: {
-  label: React.ReactNode;
-  children: React.ReactNode;
-  helper: React.ReactNode;
-  isError: React.ReactNode;
-}) {
+}: InputWrapperProps) {
   return (
     <Grid
       noPadding

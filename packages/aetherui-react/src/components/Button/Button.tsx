@@ -1,11 +1,17 @@
-import React, { useRef } from "react";
+import React from "react";
 
-import { ButtonProps } from "../../types/button";
-import { cbnCls } from "../../utils/common";
 import { Grid } from "../Layouts/Grid";
 import { Generic } from "../Layouts/Generic";
 
-export function Button({
+import { ButtonProps } from "../../types/components";
+import { HasDisplayName, RefProp } from "../../types/render";
+
+import { cbnCls } from "../../utils/common";
+import { forwardRefWithAs } from "../../utils/render";
+
+const DEFAULT_BUTTON = "button";
+
+function _Button({
   type,
   variant,
   children,
@@ -13,16 +19,18 @@ export function Button({
   icon,
   placeIcon,
   ...elementProps
-}: ButtonProps) {
-  //defaults
+}: ButtonProps<typeof DEFAULT_BUTTON>) {
+  /**
+   * These are the defaults for type and variant, if nothing is passed, these are used!
+   */
   if (!type) type = "default";
   if (!variant) variant = "default";
 
-  // const reff = useRef<HTMLButtonElement>(null)
   const variedClass = `aetherui-button-${type}-${variant}`;
 
   return (
     <Generic
+      as={DEFAULT_BUTTON}
       noMargin
       noPadding
       {...elementProps}
@@ -41,6 +49,7 @@ export function Button({
       >
         {icon && (placeIcon === "start" || !placeIcon) && (
           <Generic
+            as={"a"}
             noMargin
             noPadding
             className={`aetherui-m-right-025 aetherui-color-inherit`}
@@ -62,3 +71,11 @@ export function Button({
     </Generic>
   );
 }
+
+interface _IButtonProps extends HasDisplayName {
+  (
+    props: ButtonProps<typeof DEFAULT_BUTTON> & RefProp<typeof _Button>,
+  ): JSX.Element;
+}
+
+export const Button = forwardRefWithAs(_Button) as _IButtonProps;

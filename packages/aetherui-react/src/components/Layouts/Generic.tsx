@@ -1,23 +1,34 @@
 import React from "react";
-import { GenericComponentProps } from "../../types/layout";
+
+import {
+  ExtractElemRef,
+  HasDisplayName,
+  JSXElements,
+  RefProp,
+} from "../../types/render";
+import { GenericComponentProps } from "../../types/components";
+
 import { cbnCls } from "../../utils/common";
+import { forwardRefWithAs } from "../../utils/render";
 
 const genericClass = "aetherui-box";
 
-const GenericWithoutRef = (
+function _Generic<TElem extends JSXElements>(
   {
-    as = "div",
+    as,
     children,
     overrideClassName,
     noMargin,
     noPadding,
     className,
     ...rest
-  }: GenericComponentProps,
-  ref: React.Ref<HTMLElement>,
-) => {
-  // by default <div> is rendered
-  const Component = as as React.ElementType;
+  }: GenericComponentProps<TElem>,
+  ref: React.Ref<ExtractElemRef<TElem>>,
+) {
+  /**
+   * If no 'as' is passed as prop, div will be used by default
+   */
+  const Component = (as ?? "div") as React.ElementType;
 
   return (
     <Component
@@ -34,8 +45,12 @@ const GenericWithoutRef = (
       {children}
     </Component>
   );
-};
+}
 
-export const Generic = React.forwardRef(GenericWithoutRef);
+interface _IGenericProps extends HasDisplayName {
+  <TElem extends JSXElements>(
+    props: GenericComponentProps<TElem> & RefProp<typeof _Generic>,
+  ): JSX.Element;
+}
 
-Generic.displayName = "Generic";
+export const Generic = forwardRefWithAs(_Generic) as _IGenericProps;

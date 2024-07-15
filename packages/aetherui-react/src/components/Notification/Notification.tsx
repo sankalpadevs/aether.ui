@@ -1,34 +1,44 @@
 import React, { useEffect, useRef } from "react";
 import ReactDOM from "react-dom/client";
+
+import { Generic } from "../Layouts/Generic";
+import { Grid } from "../Layouts/Grid";
+import { Close } from "../Icons/Close";
+
 import {
   TNotification,
   TNotificationWithIconAndVariant,
-} from "../../types/notification";
+} from "../../types/components";
+
 import { cbnCls } from "../../utils/common";
-import { Generic } from "../Layouts/Generic";
-import { useTheme } from "../../context/index";
-import { Grid } from "../Layouts/Grid";
-import { Close } from "../Icons/Close";
+
+import { useTheme } from "../../context/theme";
 
 //TODO: Add animations and control buttons to the notification
 export const renderNotification = (props: TNotification) => {
   // create a notification container and render a notification inside it
   const container = document.createElement("div");
+
   container.className = cbnCls(
     "aetherui-notification aetherui-p-x-125 aetherui-p-y-0875",
     `aetherui-${props.type ?? "primary"}-notification`,
   );
+
   ReactDOM.createRoot(container).render(<Notification {...props} />);
+
   // return the notification container to append it inside root
   return container;
 };
-const Notification = (props: TNotification) => {
+
+function Notification(props: TNotification) {
   const { theme } = useTheme();
+
   const contentRef = useRef<HTMLDivElement>(null);
 
   let timeoutId: null | NodeJS.Timeout = null;
 
   let Icon: React.ReactNode;
+
   let variant: TNotificationWithIconAndVariant["variant"] = "banner";
 
   if (props.category) {
@@ -129,4 +139,4 @@ const Notification = (props: TNotification) => {
       </Grid>
     </>
   );
-};
+}

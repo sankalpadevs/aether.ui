@@ -1,6 +1,6 @@
-import { Components } from "../constants/components";
 import React from "react";
-import { TNotificationVariant } from "./notification";
+
+import { TNotificationVariant } from "./components";
 
 export type ComponentTheme = {
   colors?: {
@@ -38,6 +38,7 @@ export type ComponentTheme = {
     [k: string]: string;
   };
 };
+
 export type TypographyT = {
   weight: number;
   size: string;
@@ -87,7 +88,7 @@ export type ThemeMode = {
     user: CustomColors[];
   };
   components?: {
-    [K in (typeof Components)[number]]?: ComponentTheme;
+    [K: string]: ComponentTheme;
   };
 };
 

@@ -1,6 +1,8 @@
 import { renderNotification } from "../components/Notification/Notification";
-import { useTheme } from "../context/index";
-import { TNotification } from "../types/notification";
+
+import { TNotification } from "../types/components";
+
+import { useTheme } from "../context/theme";
 
 export default function useNotification() {
   const { theme } = useTheme();

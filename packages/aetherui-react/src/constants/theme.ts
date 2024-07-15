@@ -1,6 +1,6 @@
-import { Theme, ThemeMode } from "../types";
+import { Theme, ThemeMode } from "../types/theme";
+
 import { generateShadow, generateTypography } from "../utils/common";
-export const emitKeys = ["notificationCategories"];
 
 export const lightTheme: ThemeMode = {
   color: {

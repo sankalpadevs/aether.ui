@@ -1,7 +1,10 @@
 import React, { useContext, createContext } from "react";
-import { aetheruiTheme } from "../constants/theme";
+
 import { Theme } from "../types/theme";
+
 import { registerTheme } from "../utils/common";
+
+import { aetheruiTheme } from "../constants/theme";
 
 const ThemeContext = createContext<{
   theme: Theme;

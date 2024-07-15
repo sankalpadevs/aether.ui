@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { matchPattern } from "../utils/common";
 
 export default function useInput(
@@ -11,6 +12,7 @@ export default function useInput(
   format?: RegExp,
 ) {
   const inputRef = ref as React.RefObject<HTMLInputElement>;
+
   const [isInputFocused, setIsInputFocused] = useState(false);
   const [isError, setIsError] = useState<React.ReactNode>(null);
 
@@ -20,7 +22,9 @@ export default function useInput(
 
   const onInputBlur = () => {
     setIsInputFocused(false);
+
     const elem = inputRef.current;
+
     if (isRequired && elem && elem.value.length === 0) {
       if (requiredText) setIsError(requiredText);
       else setIsError("Required Field");
@@ -31,11 +35,13 @@ export default function useInput(
         //try to format
         if (replacer && format) {
           let formattedText;
+
           if (typeof replacer === "string") {
             formattedText = elem.value.replace(format, replacer);
           } else {
             formattedText = elem.value.replace(format, replacer);
           }
+
           //test the formatted text
           if (matchPattern(formattedText, matcher)) {
             elem.value = formattedText;

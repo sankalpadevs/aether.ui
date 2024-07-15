@@ -1,7 +1,11 @@
 import React from "react";
-import { IconType } from "../../types/icons";
 
-function PlusIcon(props: IconType, ref: React.Ref<any>) {
+import { HasDisplayName, RefProp } from "../../types/render";
+import { IconProps } from "../../types/components";
+
+import { forwardRefWithAs } from "../../utils/render";
+
+function _PlusIcon(props: IconProps, ref: React.Ref<SVGSVGElement>) {
   return (
     <svg
       ref={ref}
@@ -17,4 +21,8 @@ function PlusIcon(props: IconType, ref: React.Ref<any>) {
   );
 }
 
-export const Plus = React.forwardRef(PlusIcon);
+interface _IPlusIcon extends HasDisplayName {
+  (props: IconProps & RefProp<typeof _PlusIcon>): JSX.Element;
+}
+
+export const Plus = forwardRefWithAs(_PlusIcon) as _IPlusIcon;

@@ -1,7 +1,11 @@
 import React from "react";
-import { IconType } from "../../types/icons";
 
-function CloseIcon(props: IconType, ref: React.Ref<any>) {
+import { HasDisplayName, RefProp } from "../../types/render";
+import { IconProps } from "../../types/components";
+
+import { forwardRefWithAs } from "../../utils/render";
+
+function _CloseIcon(props: IconProps, ref: React.Ref<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,4 +24,8 @@ function CloseIcon(props: IconType, ref: React.Ref<any>) {
   );
 }
 
-export const Close = React.forwardRef(CloseIcon);
+interface _ICloseIconProps extends HasDisplayName {
+  (props: IconProps & RefProp<typeof _CloseIcon>): JSX.Element;
+}
+
+export const Close = forwardRefWithAs(_CloseIcon) as _ICloseIconProps;

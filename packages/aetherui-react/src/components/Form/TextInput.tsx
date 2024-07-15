@@ -1,32 +1,43 @@
 import React, { useEffect } from "react";
-import { InputProps } from "../../types/form";
-import { cbnCls } from "../../utils/common";
+
 import { Grid } from "../Layouts/Grid";
 import { Generic } from "../Layouts/Generic";
 import InputWrapper from "./InputWrapper";
+
+import { DEFAULT_INPUT_TAG, TextInputProps } from "../../types/components";
+import { ExtractElemRef, HasDisplayName, RefProp } from "../../types/render";
+
+import { cbnCls } from "../../utils/common";
+import { forwardRefWithAs } from "../../utils/render";
+
 import useInput from "../../hooks/input";
 import useNotification from "../../hooks/notification";
 
-export function TextInput({
-  label,
-  variant,
-  prefix,
-  suffix,
-  helper,
-  errorText,
-  requiredText,
-  error,
-  onFocus,
-  onBlur,
-  textAlign,
-  format,
-  replacer,
-  matcher,
-  clearText,
-  showCopy,
-  copyText,
-  ...elementProps
-}: InputProps) {
+function _TextInput(
+  {
+    label,
+    variant,
+    prefix,
+    suffix,
+    helper,
+    errorText,
+    requiredText,
+    error,
+    onFocus,
+    onBlur,
+    textAlign,
+    format,
+    replacer,
+    matcher,
+    clearText,
+    showCopy,
+    copyText,
+    ...elementProps
+  }: TextInputProps,
+  ref?: React.Ref<ExtractElemRef<DEFAULT_INPUT_TAG>>,
+) {
+  const forwardedRef = ref ?? React.useRef<HTMLInputElement>(null);
+
   const {
     inputRef,
     isInputFocused,
@@ -38,6 +49,7 @@ export function TextInput({
     elementProps.required,
     requiredText,
     errorText,
+    forwardedRef,
     matcher,
     replacer,
     format,
@@ -45,7 +57,10 @@ export function TextInput({
 
   const { enqueueNotification } = useNotification();
 
-  if (!variant) variant = "base"; // defaults to base
+  /**
+   * This is the default for variant, if nothing is passed in props, this is used.
+   */
+  if (!variant) variant = "base";
 
   useEffect(() => {
     if (error) {
@@ -141,3 +156,9 @@ export function TextInput({
     </InputWrapper>
   );
 }
+
+interface _ITextInputProps extends HasDisplayName {
+  (props: TextInputProps & RefProp<typeof _TextInput>): JSX.Element;
+}
+
+export const TextInput = forwardRefWithAs(_TextInput) as _ITextInputProps;

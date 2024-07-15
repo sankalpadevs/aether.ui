@@ -1,7 +1,11 @@
 import React from "react";
-import { IconType } from "../../types";
 
-function MinusIcon(props: IconType, ref: React.Ref<any>) {
+import { HasDisplayName, RefProp } from "../../types/render";
+import { IconProps } from "../../types/components";
+
+import { forwardRefWithAs } from "../../utils/render";
+
+function _MinusIcon(props: IconProps, ref: React.Ref<SVGSVGElement>) {
   return (
     <svg
       ref={ref}
@@ -17,4 +21,8 @@ function MinusIcon(props: IconType, ref: React.Ref<any>) {
   );
 }
 
-export const Minus = React.forwardRef(MinusIcon);
+interface _IMinusIcon extends HasDisplayName {
+  (props: IconProps & RefProp<typeof _MinusIcon>): JSX.Element;
+}
+
+export const Minus = forwardRefWithAs(_MinusIcon) as _IMinusIcon;

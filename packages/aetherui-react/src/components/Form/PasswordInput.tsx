@@ -1,24 +1,32 @@
 import React, { useEffect, useState } from "react";
 
 import InputWrapper from "./InputWrapper";
-import { PasswordInputProps } from "../../types/form";
-import useInput from "../../hooks/input";
 import { Grid } from "../Layouts/Grid";
-import { cbnCls } from "../../utils/common";
-import { Typography } from "../Typography/Typography";
 import { Generic } from "../Layouts/Generic";
+import { Typography } from "../Typography/Typography";
 
-export function PasswordInput({
-  helper,
-  errorText,
-  requiredText,
-  error,
-  label,
-  matcher,
-  showStrength,
-  strengthCriteria,
-  ...elementProps
-}: PasswordInputProps) {
+import { DEFAULT_INPUT_TAG, PasswordInputProps } from "../../types/components";
+
+import { cbnCls } from "../../utils/common";
+import { forwardRefWithAs } from "../../utils/render";
+
+import useInput from "../../hooks/input";
+import { ExtractElemRef, HasDisplayName, RefProp } from "../../types/render";
+
+function _PasswordInput(
+  {
+    helper,
+    errorText,
+    requiredText,
+    error,
+    label,
+    matcher,
+    showStrength,
+    strengthCriteria,
+    ...elementProps
+  }: PasswordInputProps,
+  ref?: React.Ref<ExtractElemRef<DEFAULT_INPUT_TAG>>,
+) {
   const [strength, setStrength] = useState<number | null>(null);
 
   const forwardedRef = ref ?? React.useRef<HTMLInputElement>(null);
@@ -146,3 +154,11 @@ export function PasswordInput({
     </InputWrapper>
   );
 }
+
+interface _IPasswordInputProps extends HasDisplayName {
+  (props: PasswordInputProps & RefProp<typeof _PasswordInput>): JSX.Element;
+}
+
+export const PasswordInput = forwardRefWithAs(
+  _PasswordInput,
+) as _IPasswordInputProps;
