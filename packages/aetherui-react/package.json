@@ -1,6 +1,6 @@
 {
   "name": "aetherui-react",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "",
   "private": false,
   "main": "dist/index.cjs",
@@ -38,8 +38,6 @@
     "@types/node": "^16.18.69",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "typescript": "^5.3.3"
   },
   "keywords": [],

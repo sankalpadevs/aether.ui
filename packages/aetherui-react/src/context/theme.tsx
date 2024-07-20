@@ -1,7 +1,10 @@
 import React, { useContext, createContext } from "react";
+
+import { Theme } from "../types/theme";
+
+import { registerTheme } from "../utils/common";
+
 import { aetheruiTheme } from "../constants/theme";
-import { Theme } from "../types";
-import { registerTheme } from "../utils/utils";
 
 const ThemeContext = createContext<{
   theme: Theme;
@@ -11,7 +14,7 @@ const ThemeContext = createContext<{
 ThemeContext.displayName = "ThemeContext";
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const root = document.querySelector("#root") as HTMLElement;
+  const root = document.body;
 
   registerTheme(aetheruiTheme, root);
 

@@ -1,4 +1,10 @@
 import "./index.css";
-export * from "./context/index";
+
 export * from "./components/index";
-export * from "./types/index";
+
+export * from "./context/theme";
+
+export * from "./types/components";
+export * from "./types/helpers";
+export * from "./types/render";
+export * from "./types/theme";

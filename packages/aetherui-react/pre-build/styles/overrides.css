@@ -5,3 +5,7 @@
 .aetherui-no-margin {
   margin: 0 !important;
 }
+
+.aetherui-color-inherit {
+  color: inherit !important;
+}
